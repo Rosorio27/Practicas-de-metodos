@@ -4,20 +4,22 @@ package matematicas;
  * Contiene algoritmos para manipulación de números enteros.
  */
 
-/**
- * Comprueba si un número entero positivo es capicúa.
- * <p>
- * Un número es capicúa si se lee igual de izquierda a derecha
- * que de derecha a izquierda (ej: 121, 5005).
- * La implementación utiliza aritmética pura para invertir el número
- * sin necesidad de convertirlo a Texto (String), optimizando así la memoria.
- * </p>
- *
- * @param n El número entero positivo a verificar.
- * @return <code>true</code> si el número es capicúa, <code>false</code> en caso contrario.
- */
+
 
 public class Varias {
+
+    /**
+     * Comprueba si un número entero positivo es capicúa.
+     * <p>
+     * Un número es capicúa si se lee igual de izquierda a derecha
+     * que de derecha a izquierda (ej: 121, 5005).
+     * La implementación utiliza aritmética pura para invertir el número
+     * sin necesidad de convertirlo a Texto (String), optimizando así la memoria.
+     * </p>
+     *
+     * @param n El número entero positivo a verificar.
+     * @return <code>true</code> si el número es capicúa, <code>false</code> en caso contrario.
+     */
     public static boolean Escapicua(int n){
           int residuo;
           int resultado=0;
@@ -56,5 +58,20 @@ public class Varias {
      return siguiente;
     }
 
+    public static double potencia (double base, int exponente){
+        double resultado=1;
+
+        if (exponente==0){
+            return 1;
+        }else if (exponente==1){
+            return base;
+        }else{
+            for (int i=0; i<exponente; i++){
+                resultado *= base;
+            }
+        }
+
+        return resultado;
+    }
 }
 
