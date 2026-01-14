@@ -26,4 +26,9 @@ class VariasTest {
     void potencia() {
         assertEquals(8, Varias.potencia(2, 3), "2 elevado al cubo debe ser 8");
     }
+
+    @org.junit.jupiter.api.Test
+    void contarDigitos() {
+        assertEquals(2, Varias.contarDigitos(-24), "2 elevado al cubo debe ser 8");
+    }
 }
